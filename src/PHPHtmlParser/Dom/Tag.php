@@ -330,7 +330,7 @@ class Tag
                 // attribute that was in the array not found in the array... let's continue.
                 continue;
             } catch (\TypeError $e) {
-              $val = null;
+                continue;
             }
             $val = $attributeDTO->getValue();
             if (\is_null($val)) {
